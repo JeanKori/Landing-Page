@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Presentacion{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/3046582/pexels-photo-3046582.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    /* https://images.pexels.com/photos/2887293/pexels-photo-2887293.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 */
+    background-size: 110% 120%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 80%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+    color: #fff;
+    cursor: pointer;
+}
+.logo h1{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    display: flex;
+    color: #fbfcfd;
+}
+h1 span{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+button{
+    color: #fbfcfd;
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    padding: 5px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    transition: all .5s ease-in-out;
+}
+.navbar button:hover{background: turquoise; border-color: turquoise;}
+
+.welcome{
+    position: absolute;
+    top:50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #fbfcfd;
+    z-index: 2;
+}
+
+.welcome h2{
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 80px;
+    margin: 20px 0px 20px;
+    line-height: 80px;
+}
+.welcome small{
+    font-family: 'Crimson Text', serif;
+    font-size: 30px;
+}
+.welcome button:hover{background: #1FFFA1; border-color: #66FFBD;}
+.sidebar{
+    width: 50px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.menu{
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+.menu i{
+    color: #fff;
+    margin-left: 3px;
+    font-size: 30px;
+}
+i{
+    color: #fff;
+    font-size: 18px;
+}
+span{
+    display: block;
+    width: 25px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.link-interes{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+.animation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -50px;
+}
+.animation img{
+    width: 50px;
+    animation: burbu 6s linear infinite;
+}
+
+@keyframes burbu{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-90vh);
+        opacity: 0;
+    }
+}
+
+.animation img:nth-child(1){
+    animation-delay: 1s;
+    width: 25px;
+}
+.animation img:nth-child(2){
+    animation-delay: 6s;
+}
+.animation img:nth-child(3){
+    animation-delay: 4.5s;
+    width: 25px;
+}
+.animation img:nth-child(4){
+    animation-delay: 8s;
+}
+.animation img:nth-child(5){
+    animation-delay: 2.8s;
+}
+.animation img:nth-child(6){
+    animation-delay: 9s;
+    width: 20px;
+}
+.animation img:nth-child(7){
+    animation-delay: 5.9s;
+}
+.animation img:nth-child(8){
+    animation-delay: 1.5s;
+    width: 35px;
+}
+.animation img:nth-child(9){
+    animation-delay: 5.5s;
+}
+
