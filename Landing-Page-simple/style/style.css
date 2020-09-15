@@ -34,7 +34,7 @@ body{
     bottom: 0;
     width: 40%;
     background-image: url(https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-size: cover;
+    background-size: cover;/*Jean Carlos Ruiz Chamorro*/
     background-position: left center;
     filter: blur(8px);
 }
@@ -128,6 +128,7 @@ a:hover{color: Tomato !important;}
     height: 35px;
     text-align: center;
 }
+/*Jean Carlos Ruiz Chamorro*/
 .indice{
     font-size: 28px;
     letter-spacing: 8px;
@@ -162,23 +163,29 @@ a:hover{color: Tomato !important;}
 .action:hover i{color: tomato !important}
 
 /* Medias query */
-
+@media(min-width: 1500px){
+    .title{
+        left: 24%;
+    }
+    .title h1{font-size: 400px; background-size: 237%;}
+    .salt{top: 225px;}
+}
+@media(min-width: 1200px) and (max-width:1500px){
+    .title{ top:31%;left: 32%;}
+    .title h1{font-size: 300px;background-size: 250%;}
+    .salt{top: 185px; left: 390px;}
+}
 @media(max-width: 1380px){
     .info{
         width: 45%;
     }
 }
 @media(max-width: 1110px){
-    .links-social span{ 
-        margin: 0 10px 0 0;
-    }
-    .call-action a{
-        padding: 0 20px 0 0;
-    }
+    .links-social span{ margin: 0 10px 0 0;}
+    .call-action a{padding: 0 20px 0 0;}
     .background::before{background-position: center;}
-    .side{
-        top: 63%;
-    }
+    .side{top: 63%;}
+    .title h1{background-size: 294%;}
 }
 @media(max-width: 991px){
     .title{
@@ -199,10 +206,8 @@ a:hover{color: Tomato !important;}
     .call-action a{
         padding: 10px 0 0 0;
         animation: visible .5s ease-in-out;
-    }
-    .info{
-        width: 65%;
-    }
+    }/*Jean Carlos Ruiz Chamorro*/
+    .info{width: 65%;}
 }
 @media(max-width: 768px){
     .title{
@@ -211,9 +216,7 @@ a:hover{color: Tomato !important;}
     }
     .title h1{font-size: 150px;}
     .salt{top: 95px; left:230px;}
-    .info{
-        width: 85%;
-    }
+    .info{width: 85%;}
     .count{width: 35%;}
     .info-text{width: 65%;}
 }
@@ -223,7 +226,7 @@ a:hover{color: Tomato !important;}
         top: 30%;
         left: 35%;
     }
-    .title h1{font-size: 130px;}
+    .title h1{font-size: 130px;  background-size: 400%;}
     .salt{left:130px;}
     .side{
         width: 45px;
@@ -233,9 +236,7 @@ a:hover{color: Tomato !important;}
     .indice{font-size: 18px;}
     .info-text h3{font-size: 18px;}
     .info-text p{font-size: 11px;}
-    .indice-item span i{
-        font-size: 6px;
-    }
+    .indice-item span i{font-size: 6px;}
     .action a{font-size: 14px;}
 }
 @media(max-width: 450px){
@@ -246,15 +247,13 @@ a:hover{color: Tomato !important;}
     .title h1{font-size: 100px;}
     .salt{top: 75px; left:110px;}
 }
-@media(max-width: 360px){
-    .title{
-        left: 30%;
-    }
+@media(max-width: 360px){/*Jean Carlos Ruiz Chamorro*/
+    .title{left: 30%;}
     .title h1{font-size: 80px;}
     .salt{top: 55px; left:95px;}
     .info{width: 100%;}
 }
-
+/* Animacion */
 @keyframes visible{
     0%{
         opacity: 0;
@@ -269,4 +268,3 @@ a:hover{color: Tomato !important;}
         opacity: 1;
     }
 }
-
